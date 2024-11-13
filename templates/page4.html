@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Page 2: Ask for your favorite color{% endblock %}
+{% block content %}
+  <h1>Page 2</h1>
+ <form action={{ url_for("renderPage3") }} method="POST">
+  how fast can the average person type:<br>
+  <input type="radio" id="html" name="thirdanswer" value="40">
+  <label for="html">40 words per minute</label><br>
+  <input type="radio" id="css" name="thirdanswer" value="43">
+  <label for="css">43 words per minute</label><br>
+  <input type="radio" id="javascript" name="thirdanswer" value="32">
+  <label for="javascript">32 words per minute</label>
+<br>
+  <input type="submit" value="Submit">
+ </form> 
+{% endblock %}

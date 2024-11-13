@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Page 2: Ask for your favorite color{% endblock %}
+{% block content %}
+  <h1>Page 2</h1>
+ <form action={{ url_for("renderPage4") }} method="POST">
+  how many  coding langueges are there:<br>
+  <input type="radio" id="html" name="secondanswer" value="2500">
+  <label for="html">2500</label><br>
+  <input type="radio" id="css" name="secondanswer" value="400">
+  <label for="css">400</label><br>
+  <input type="radio" id="javascript" name="secondanswer" value="87">
+  <label for="javascript">87</label>
+<br> 
+  <input type="submit" value="Submit">
+ </form> 
+{% endblock %}

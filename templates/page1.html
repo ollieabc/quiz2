@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Page 1: Name{% endblock %}
+{% block content %}
+  <h1>Page 1: What is the most used coding language?</h1>
+ <form action={{ url_for("renderPage2") }} method="POST">
+  what is the most used code:<br>
+  <input type="radio" id="html" name="firstanswer" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="firstanswer" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="firstanswer" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+<br>
+  <input type="submit" value="Submit">
+ </form> 
+{% endblock %}
